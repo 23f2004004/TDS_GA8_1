@@ -1,40 +1,116 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+  <!-- Reveal core -->
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+  <!-- Code highlighting theme -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+<body>
+<div class="reveal">
+  <div class="slides">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <p>23f2004004@ds.study.iitm.ac.in</p>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+      <aside class="notes">
+        Introduce the purpose of the presentation and welcome stakeholders.
+      </aside>
+    </section>
+
+    <!-- Slide 2: Markdown slide -->
+    <section data-markdown>
+      <textarea data-template>
+## Key Highlights (Markdown)
+
+- Strong revenue growth  
+- Improved operational efficiency  
+- Positive outlook for next quarter  
+      </textarea>
+<textarea data-template>
+## Presenter Contact
+23f2004004@ds.study.iitm.ac.in
+  </textarea>
+      <aside class="notes">
+        Emphasize year-on-year improvement and market confidence.
+      </aside>
+    </section>
+
+    <section>
+      <h2>Performance Overview</h2>
+      <p class="fragment">Revenue increased</p>
+      <p class="fragment">Costs optimized</p>
+      <p class="fragment">Net profit improved</p>
+
+      <aside class="notes">
+        Talk through each metric step by step as it appears.
+      </aside>
+    </section>
+
+    <section>
+      <h2>Financial Logic (Code)</h2>
+      <pre><code class="language-python">
+revenue = 1200000
+expenses = 850000
+
+profit = revenue - expenses
+roi = profit / expenses
+
+print("Profit:", profit)
+print("ROI:", roi)
+      </code></pre>
+
+      <aside class="notes">
+        Explain how ROI and profit are calculated in simple terms.
+      </aside>
+    </section>
+
+    <section>
+      <h2>Key Financial Formula</h2>
+      <p>
+        \[
+        ROI = \frac{Net\ Profit}{Total\ Investment}
+        \]
+      </p>
+
+      <aside class="notes">
+        Mention how ROI is used to evaluate investment efficiency.
+      </aside>
+    </section>
+
+    <section>
+      <h2>Thank You</h2>
+      <p>Questions & Discussion</p>
+
+      <aside class="notes">
+        Invite questions and explain next steps.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/math/math.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+  });
+</script>
+
+</body>
 </html>
